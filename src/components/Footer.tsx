@@ -1,5 +1,5 @@
 import React from 'react';
-import { Cloud, Mail, MessageCircle, Twitter, Github, Disc as Discord } from 'lucide-react';
+import { Cloud, Mail, MessageCircle, Twitter, Github, Disc } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -23,7 +23,7 @@ export default function Footer() {
                 <Twitter className="h-5 w-5" />
               </a>
               <a href="#" className="text-gray-400 hover:text-white transition-colors p-2 rounded-lg hover:bg-gray-800">
-                <Discord className="h-5 w-5" />
+                <Disc className="h-5 w-5" />
               </a>
               <a href="#" className="text-gray-400 hover:text-white transition-colors p-2 rounded-lg hover:bg-gray-800">
                 <Github className="h-5 w-5" />
