@@ -277,18 +277,23 @@ export default function RamCalculator() {
                   <span>Requires {totalRAM}GB RAM</span>
                   <span>Optimized for {serverType.charAt(0).toUpperCase() + serverType.slice(1)}</span>
                 </div>
-                <button className="w-full bg-white text-blue-600 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-                  <div className="flex items-center justify-center space-x-2">
-                    <span>Get Started</span>
-                    <ArrowRight className="h-4 w-4" />
-                  </div>
-                </button>
-                <button 
-                  onClick={scrollToPlans}
-                  className="w-full bg-white/20 text-white py-3 rounded-lg font-semibold hover:bg-white/30 transition-colors border border-white/30"
-                >
-                  View All Plans
-                </button>
+                <div className="space-y-3">
+                  <button 
+                    onClick={() => window.open(recommendedPlan.link, '_blank')}
+                    className="w-full bg-white text-blue-600 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+                  >
+                    <div className="flex items-center justify-center space-x-2">
+                      <span>Get Started</span>
+                      <ArrowRight className="h-4 w-4" />
+                    </div>
+                  </button>
+                  <button 
+                    onClick={scrollToPlans}
+                    className="w-full bg-white/20 text-white py-3 rounded-lg font-semibold hover:bg-white/30 transition-colors border border-white/30"
+                  >
+                    View All Plans
+                  </button>
+                </div>
               </div>
             </div>
           </div>
